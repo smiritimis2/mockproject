@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+#main
+{
+    
+    flex-direction:row;
+    display:flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    
+    flex-flow: wrap;
+  position: absolute;
+  top:100px;
+
+
+   
+}
+#mens
+{
+    
+   
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+   
+
+  position: absolute;
+  top:10px;
+   left:20px;
+
+   
+}
+
+#womens
+{
+    
+   
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+   
+
+  position: absolute;
+  top:400px;
+   left:20px;
+
+   
+}
+#jewellery
+{
+    
+   
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+   
+
+  position: absolute;
+  top:800px;
+   left:20px;
+
+   
+}
+#electronics
+{
+    
+   
+    display:flex;
+    flex-direction: row;
+    justify-content:space-between;
+   
+
+  position: absolute;
+  top:1200px;
+   left:20px;
+
+   
+}
+
+#btn
+{
+    position:absolute;
+    top:30px;
+    display:flex;
+    padding: 20px;
+    flex-wrap: wrap;
+    left:20px;
+    
+}
+button
+{
+    
+  
+    height:40px;
+    width: 150px;
+    color: black;
+    background-color: white
+}
+button:active
+{
+    background-color: black;
+    color:white;
+
+}
+
+#search
+{
+    position:absolute;
+    top:10px;
+    left:10px;
+    height:20px;
+    width:800px;
+    color:black;
+    border-radius:10px solid black;
+    border-color:black;
+}
+a{
+    color:black;
+    position: absolute;
+    right:10px;
+
+}
+#btnsearch
+{
+    position:absolute;
+    top:50px;
+    right:10px;
+}
+#cart
+{
+    position:absolute;
+    top:5px;
+    right:80px;
+}
+</style>
+<body>
+       
+        <a  id="cart" href="./mycart.html">MyCart</a> 
+<div></div>
+        <a class="end" href="./signUp.html">Signup</a> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; 
+    <br>
+    <a class="end" href="./index.html">Home</a>
+    <br>
+    
+    
+    <input type="text" placeholder="search" id="search" onkeyup="con(this.value)">
+   <button id="btnsearch">Search</button>
+    <div id="btn">
+    <button id="All">All</button>
+    <button id="Mens">Mens</button>
+    <button id="Womens">Womens</button>
+    <button id="Jewellery">Jewellery</button>
+    <button id="Electronics">Electronics</button>
+
+</div>
+    <div id="main">
+<div id="mens">
+<h3>Men's Clothing</h3>
+</div>
+<div id="womens">
+    <h3>Women's Clothing</h3>
+</div>
+<div id="jewellery">
+    <h3>jewellery</h3>
+</div>
+<div id="electronics"><h3>Electronics</h3></div>
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+   <script src="script.js" ></script>
+</body>
+</html>

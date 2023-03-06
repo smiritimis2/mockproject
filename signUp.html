@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+body
+{
+    height:200px;
+    width:200px;
+    background-color:white;
+}
+
+#emsg
+{
+    color: brown;
+}
+
+#Meshop
+        {
+       
+        
+        background-color:black;
+        width: 1000px;
+        height: 50px;
+        color: white;
+        text-decoration-color: black;
+       position: absolute;
+       top: 0px;
+      
+    
+        }
+
+        .end
+        {
+            position: relative;
+           
+            color:white;
+            display:inline-block;
+           left:700px;
+            padding: 8px;
+           
+            bottom: 5px;
+            right:20px;
+            text-decoration: none;
+           
+        }
+        #first
+        {
+            position:relative;
+            left:20px;
+            top:17px;
+
+        }
+  h1{
+      position: absolute;
+      top:50px;
+      left:300px;
+  }
+
+
+</style>
+
+
+
+<body>
+
+
+        <div id="Meshop">
+                <div id="first">Meshop.</div>
+              <a class="end" href="./index.html">Home</a>
+              <a class="end" href="./login.html">Login</a>
+              <a class="end" href="./signUp.html">Signup</a>
+              <a class="end" href="">Mycart</a>
+           
+        
+        
+            </div>
+
+
+
+
+
+
+    <h1>SignUP</h1>
+    <br>
+    <br>
+    <label>Name</label>
+   &nbsp;&nbsp;&nbsp; <input type="text" onkeyup="Namecheck(this.value)" id="nameentry">
+   <div id="name"></div>
+    <br>
+    <label>LastName</label>
+    &nbsp;&nbsp;&nbsp; <input type="text"onkeyup="LastNamecheck(this.value)" id="lastname" >
+    <div id="last"></div>
+    <br>
+    <label>Email</label>
+   &nbsp; <input type="text" id="email" onkeyup="Emailcheck(this.value)" >
+   <div id="emsg"></div>
+    <br>
+    <br>
+    <label>password</label>
+   &nbsp;&nbsp; <input type="text" onkeyup="Passcheck(this.value)" id="password">
+   <div id="msg"></div>
+<br>
+<br>
+   
+     <p class="password-check"> 1 lower case character</p>
+     <br>
+     <p class="password-check"> 1 upper case character</p>
+     <br>
+     <p class="password-check"> 1 numerical  character</p>
+     <br>
+     <p class="password-check"> 1 special character</p>
+    <br>
+    <br>
+    <label>confirm password</label>
+    &nbsp;&nbsp;<input type="text" id="confirm" onkeyup="concheck(this.value)">
+    <div id="con"></div>
+    
+    <button id="submit">Submit</button>
+    <div id="doneval"></div>
+    <script src="signscript.js" ></script>
+ 
+</body>
+</html>
